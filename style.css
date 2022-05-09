@@ -1,0 +1,188 @@
+/* GLOBAL STYLES */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.76;
+}
+
+body{
+    font-size: 1.65rem;
+}
+
+header{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+h3{
+    font-weight: 200;
+    text-shadow: 0 0 1px #000;
+    margin-bottom: 0.5rem ;
+}
+
+li{
+    list-style: square;
+}
+
+
+
+/* NAV-BAR */
+
+#navbar{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 31rem;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+
+#img-div{
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    height: 20rem;
+    justify-content: center;
+}
+
+#navbar img{
+    width: 100%;
+    max-width: 13rem;
+}
+
+
+
+#navbar header{
+    margin: 1rem;
+}
+
+#navbar ul{
+  
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+#navbar li{
+    list-style: none;
+    display: block;
+    border-top: 2px solid #ddd;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar li:last-child{
+    border-bottom: 2px solid #ddd;
+}
+
+#navbar a{
+    font-size: 1.55rem;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: rgb(47, 47, 156);
+    text-align: center;
+    padding: 0.4rem;
+    transition: all 0.15s ease-out;
+    text-shadow: 0 0 1px rgb(29, 29, 87);
+}
+
+#navbar a:hover{
+    box-shadow: 0 2px 2px #777;
+    transform: translateY(-2px);
+    background-color: #ddd;
+   
+   
+  
+}
+
+
+/* MAIN DOCUMENT */
+#main-doc{
+    margin: 0 0 11rem 32rem;
+    padding: 2rem;
+}
+
+#main-doc header{
+    text-shadow: 0 0 1px #000;
+    font-size: 3rem;
+    text-align: left;
+}
+
+section article{
+    margin: 1.5rem;
+}
+
+
+section li{
+    margin: 0 0 1.5rem;
+}
+
+section li:last-child{
+    margin-bottom: 2rem;
+}
+
+#Loops li{
+    margin: 0;
+}
+
+code{
+    display: block;
+    position: relative;
+    white-space: pre-line;
+    background-color: #f7f7f7;
+    padding: 2rem;
+    line-height: 1.8;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+.datatypes{
+    white-space: pre-line;
+    margin-left: 3rem;
+    text-shadow: 0 0 0 #000;
+}
+
+.datatypes span{
+    font-family: monospace;
+    color: rgb(226, 9, 64);
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* For Tablets */
+@media only screen and (max-width: 850px){
+    
+
+    #navbar{
+        position: absolute;
+        top:0;
+        transform: scaleX(0.97);
+        width: 100%;
+        height: initial;
+        border: none;
+        overflow-y: auto;
+    }
+
+    #main-doc{
+        position: relative;
+        margin-left: 0;
+        margin-top: 50rem;
+
+    }
+}

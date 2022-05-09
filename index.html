@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python Documentation page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="img-div">
+            <img src="python-logo.png" alt="Python logo">
+        </div>
+        <header>Python Documentation</header>
+        <ul>
+            <li><a href="#Introduction_to_Python">Introduction to Python</a></li>
+            <li><a href="#Syntax">Syntax</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Datatypes">Datatypes</a></li>
+            <li><a href="#Loops">Loops</a></li>
+            <li><a href="#Functions">Functions</a></li>
+        </ul>    
+    </nav>
+
+    <main id="main-doc">
+
+        <section class="main-section" id="Introduction_to_Python">
+            <header>Introduction to Python</header>
+            <article>
+                <p>
+                    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                    <br>
+                    It is used for but not limited to web development(server-side), software development, mathematics, system scripting.
+                    
+                    <h3>What can Python do?</h3>
+                    <ul>
+                        <li>Python can be used on a server to create web applications.</li>
+                        <li>Python can be used alongside software to create workflows.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>Python can be used to handle big data and perform complex mathematics.</li>
+                        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                    </ul>
+
+                    As of now, the most recent major version of Python is Python 3. However, Python 2,
+                    although not being updated with anything other than security updates, is still quite popular.
+                    <br>
+                    It is also apparent to note that Python can be written in a text editor as well as in Integrated Development Environments, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.
+                </p> 
+            </article>
+        </section>
+
+        <section class="main-section" id="Syntax" >
+            <header>Syntax</header>
+            <article>
+                <p>
+                    Python syntax can be directly executed in the Command Line as so:
+                    <code>>>> print("Hello, World!") 
+                        Hello, World! 
+                    </code>
+                    <br>
+                    However though, the Python syntax places a huge importance on the indentation of codes as it uses that to indicate blocks of code. This very unlike other programmming language that only recommend indentation for mere readibilty of overall code.
+                    <br>
+                    An example of this is shown as follows:
+                    <code>if 5 > 2:
+                        &emsp;&emsp;print("Five is greater than two!")
+                    </code>
+                    <br>
+                    If the above indentation was skipped, the output would be a glaring error message in the form of "Syntax error".
+                    <br>
+                    The number of spaces is up to the programmer but the recommended for optimum readability is four spaces or in other words, one tab. But for the code to actually work, it has to be at least one space.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>
+                    Variables are containers for storing data values.
+                    It's important to note that Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.
+                    <br>
+                    An example of this is:
+                   
+                    <code>x = 5
+                    y = "John"
+                    print(x)
+                    print(y)
+                   </code>
+                  
+                    
+                    <br>
+                    Variables do not need to be declared with any particular type, and can even change type after they have been set.
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Datatypes">
+            <header>Datatypes</header>
+            <article>
+                <p>
+                    In programming, data type is an important concept.
+                    <br>
+                    Variables can store data of different types, and different types can do different things.
+                    
+                    Python has the following data types built-in by default, in these categories:
+                    <div class="datatypes">Text Type: <span>str</span> 
+
+                        Numeric Types: <span>int, float, complex</span>
+                        
+                        Sequence Types: <span>list, tuple, range</span>
+                    
+                        Set Types: <span>set, frozenset</span>
+                        
+                        Boolean Type: <span>bool</span>
+                        
+                        Binary Types: <span>bytes, bytearray, memoryview</span>
+                    
+                        None Type: <span>None</span>
+                        
+                    </div>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops">
+            <header>Loops</header>
+            <article>
+                <p>
+                    Python has two primitive loop commands:
+                    <ul>
+                        <li>While loops</li>
+                        <li>For loops</li>
+                    </ul>
+                    
+                    <h3>While loops</h3>
+                    With the while loop, we can execute a set of statements as long as a condition is true.
+                    <br>
+                    Example:
+                    <span>Print i as long as i is less than 6:</span>
+                    
+                    <code>i = 1
+                        while i < 6: 
+                        &emsp;&emsp;&emsp;&emsp;print(i) 
+                        &emsp;&emsp;&emsp;&emsp;i += 1
+                    </code>
+                    <br>
+                    Note: remember to increment i(e.g: i += 1), or else the loop will continue forever.
+                    <br>
+                    The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, which we set to 1.
+                    
+                    <h3>For loops</h3>
+                    A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
+                    <br>
+                    This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.
+                    
+                    <br>
+                    With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+                    <br>
+                    Example:
+                    <span>Print each fruit in a fruit list:</span>
+                    
+                    <code>fruits = ["apple", "banana", "cherry"]
+                        for x in fruits:
+                        &emsp;&ensp;&ensp;&ensp;&emsp;&emsp;&emsp;&emsp;print(x)
+                    </code>
+                    <br>
+                    The for loop does not require an indexing variable to set beforehand.
+                </p>
+            </article>
+        </section>   
+
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>
+                    A function is a block of code which only runs when it is called.
+                    <br>
+                    You can pass data, known as parameters, into a function.
+                    <br>
+                    A function can return data as a result.
+                    <h3>Creating a function</h3>
+                    In Python a function is defined using the def keyword. 
+                    <br>
+                    An examples shows this in action:
+                    <code>def my_function():
+                        &emsp;&emsp;print("Hello from a function")
+                    </code>
+                    <h3>Calling a Function</h3>
+                    To call a function, use the function name followed by parenthesis. 
+                    <br>
+                    Example:
+                    <code>def my_function():
+                        &emsp;&emsp;print("Hello from a function")
+                        
+                        my_function()
+                    </code>
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
